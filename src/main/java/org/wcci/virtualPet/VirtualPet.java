@@ -14,6 +14,10 @@ public class VirtualPet {
 		this.boredomLevel = boredomLevel;
 	}
 
+	public String getPetName() {
+		return petName;
+	}
+
 	public int getHungerLevel() {
 		return hungerLevel;
 	}
@@ -38,8 +42,9 @@ public class VirtualPet {
 		boredomLevel -= playAmount;
 	}
 
-	public String getPetName() {
-		return petName;
+	public void tick() {
+		hungerLevel += 10;
+		thirstLevel += 10;
+		boredomLevel += 10;
 	}
-
 }

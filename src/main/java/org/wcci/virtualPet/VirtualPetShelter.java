@@ -40,4 +40,11 @@ public class VirtualPetShelter {
 		VirtualPet petToPlayWith = findPet(petName);
 		petToPlayWith.playWithPet(playAmount);
 	}
+
+	public void showAllPets() {
+		for (VirtualPet pet : pets.values()) {
+			System.out.println("Pet name: " + pet.getPetName() + " " + "Hunger Level: " + pet.getHungerLevel() + " "
+					+ "Thirst Level: " + pet.getThirstLevel() + "Boredom Level: " + pet.getBoredomLevel());
+		}
+	}
 }
