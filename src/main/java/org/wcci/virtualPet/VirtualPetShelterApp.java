@@ -6,9 +6,7 @@ public class VirtualPetShelterApp {
 
 	private static String userChoice;
 	private static String petToPlayWith;
-	private static String newPetName;
-	private static String petToTakeIn;
-	private static Object petToAdopt;
+	private static String petToAdopt;
 
 	public static void main(String[] args) {
 
@@ -53,7 +51,6 @@ public class VirtualPetShelterApp {
 				myShelter.pets.remove(petToAdopt);
 				System.out.println("Please take great care of " + petToAdopt + ".");
 				menuOptions(input);
-//				userChoice = input.nextLine();
 			} else if (userChoice.equals("5")) {
 				System.out.println("What is the new pet's name?");
 				String newPetName = input.nextLine();

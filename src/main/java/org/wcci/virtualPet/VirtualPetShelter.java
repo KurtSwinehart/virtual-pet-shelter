@@ -7,9 +7,6 @@ import java.util.Map;
 public class VirtualPetShelter {
 
 	Map<String, VirtualPet> pets = new HashMap<String, VirtualPet>();
-	private int hungerLevel;
-	private int thirstLevel;
-	private int boredomLevel;
 
 	public void add(VirtualPet pet) {
 		pets.put(pet.getPetName(), pet);
@@ -53,9 +50,7 @@ public class VirtualPetShelter {
 
 	public void tick() {
 		for (VirtualPet pet : pets.values()) {
-			hungerLevel += 10;
-			thirstLevel += 10;
-			boredomLevel += 10;
+			pet.tick();
 		}
 	}
 }
