@@ -7,6 +7,9 @@ import java.util.Map;
 public class VirtualPetShelter {
 
 	Map<String, VirtualPet> pets = new HashMap<String, VirtualPet>();
+	private int hungerLevel;
+	private int thirstLevel;
+	private int boredomLevel;
 
 	public void add(VirtualPet pet) {
 		pets.put(pet.getPetName(), pet);
@@ -25,14 +28,14 @@ public class VirtualPetShelter {
 	}
 
 	public void feedAll() {
-		for (VirtualPet pet : pets.values()) {
-			pet.giveFood(10);
+		for (VirtualPet pets : pets.values()) {
+			pets.giveFood(10);
 		}
 	}
 
 	public void waterAll() {
-		for (VirtualPet pet : pets.values()) {
-			pet.giveWater(10);
+		for (VirtualPet pets : pets.values()) {
+			pets.giveWater(10);
 		}
 	}
 
@@ -45,6 +48,14 @@ public class VirtualPetShelter {
 		for (VirtualPet pet : pets.values()) {
 			System.out.println("Pet name: " + pet.getPetName() + " " + "Hunger Level: " + pet.getHungerLevel() + " "
 					+ "Thirst Level: " + pet.getThirstLevel() + "Boredom Level: " + pet.getBoredomLevel());
+		}
+	}
+
+	public void tick() {
+		for (VirtualPet pet : pets.values()) {
+			hungerLevel += 10;
+			thirstLevel += 10;
+			boredomLevel += 10;
 		}
 	}
 }
