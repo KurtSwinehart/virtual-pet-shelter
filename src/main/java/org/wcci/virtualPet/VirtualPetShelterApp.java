@@ -14,7 +14,7 @@ public class VirtualPetShelterApp {
 		VirtualPetShelter myShelter = new VirtualPetShelter();
 
 		myShelter.add(new VirtualPet("Chewie", 20, 10, 10));
-		myShelter.add(new VirtualPet("Max", 10, 20, 10));
+		myShelter.add(new VirtualPet("Maximus", 10, 20, 10));
 		myShelter.add(new VirtualPet("Swarley", 20, 30, 15));
 		myShelter.add(new VirtualPet("Ginger", 30, 10, 20));
 

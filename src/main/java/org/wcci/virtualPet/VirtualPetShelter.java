@@ -43,8 +43,8 @@ public class VirtualPetShelter {
 
 	public void showAllPets() {
 		for (VirtualPet pet : pets.values()) {
-			System.out.println("Pet name: " + pet.getPetName() + " " + "Hunger Level: " + pet.getHungerLevel() + " "
-					+ "Thirst Level: " + pet.getThirstLevel() + "Boredom Level: " + pet.getBoredomLevel());
+			System.out.println("Pet name: " + pet.getPetName() + " " + "\tHunger Level: " + pet.getHungerLevel() + " "
+					+ "\tThirst Level: " + pet.getThirstLevel() + "\tBoredom Level: " + pet.getBoredomLevel());
 		}
 	}
 

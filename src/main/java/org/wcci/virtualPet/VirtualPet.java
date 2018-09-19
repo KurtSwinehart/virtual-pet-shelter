@@ -43,8 +43,8 @@ public class VirtualPet {
 	}
 
 	public void tick() {
-		hungerLevel += 10;
-		thirstLevel += 10;
-		boredomLevel += 10;
+		hungerLevel += 5;
+		thirstLevel += 5;
+		boredomLevel += 5;
 	}
 }
